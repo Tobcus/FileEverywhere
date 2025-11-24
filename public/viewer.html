@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>ClipBridge – View</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>FileEverywhere – View</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body class="viewer-body">
   <div class="viewer-shell">
     <header class="topbar">
-      <div class="logo">Clip<span>Bridge</span></div>
+      <div class="logo">File<span>Everywhere</span></div>
       <div class="subtitle">Shared content</div>
     </header>
 
@@ -16,13 +16,23 @@
       <div id="viewerStatus" class="status"></div>
 
       <section id="viewerContent" class="viewer-content hidden">
-        <div id="viewerText" class="viewer-text"></div>
-        <div id="viewerFile" class="viewer-file"></div>
+        <div class="viewer-block">
+          <div id="viewerText" class="viewer-text"></div>
+          <button id="copyTextBtn" class="btn-primary viewer-inline-btn">
+            Copy
+          </button>
+        </div>
+
+        <div class="viewer-block">
+          <div id="viewerFile" class="viewer-file"></div>
+          <button id="downloadBtn" class="btn-ghost viewer-inline-btn">
+            Download file
+          </button>
+        </div>
       </section>
     </main>
   </div>
 
-  <!-- IMPORTANT: leading slash so it loads /viewer.js, not the HTML -->
   <script src="/viewer.js"></script>
 </body>
 </html>
