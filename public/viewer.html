@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClipBridge – View</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="viewer-body">
+  <div class="viewer-shell">
+    <header class="topbar">
+      <div class="logo">Clip<span>Bridge</span></div>
+      <div class="subtitle">Shared content</div>
+    </header>
+
+    <main class="viewer-main">
+      <div id="viewerStatus" class="status"></div>
+
+      <section id="viewerContent" class="viewer-content hidden">
+        <div id="viewerText" class="viewer-text"></div>
+        <div id="viewerFile" class="viewer-file"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- IMPORTANT: leading slash so it loads /viewer.js, not the HTML -->
+  <script src="/viewer.js"></script>
+</body>
+</html>

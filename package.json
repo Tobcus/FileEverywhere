@@ -1,0 +1,17 @@
+{
+  "name": "clipboard-share",
+  "version": "1.0.0",
+  "description": "Paste text/images and get a shareable link",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ClipBridge – Clipboard to Link</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>TEST TEXT</h1>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="logo">Clip<span>Bridge</span></div>
+      <div class="subtitle">Paste anything. Get a link. Open anywhere.</div>
+    </header>
+
+    <main class="main-grid">
+      <section class="input-panel">
+        <h2>1. Paste or upload</h2>
+        <div class="dropzone" id="dropzone">
+          <p>Paste with <strong>Ctrl+V</strong> or drop a file here</p>
+          <p class="muted">Images, text, PDFs, etc.</p>
+          <input type="file" id="fileInput" />
+        </div>
+
+        <textarea
+          id="textInput"
+          placeholder="Or just type / paste your text here..."
+        ></textarea>
+
+        <div class="meta-row">
+          <button id="createBtn">Create Share Link</button>
+          <div id="status" class="status"></div>
+        </div>
+      </section>
+
+      <section class="preview-panel">
+        <h2>2. Preview</h2>
+        <div id="previewArea" class="preview-area empty">
+          <p class="muted">No content yet. Paste text or an image to preview.</p>
+        </div>
+
+        <h2>3. Share link</h2>
+        <div id="linkBox" class="link-box hidden">
+          <input id="shareLink" readonly />
+          <button id="copyLinkBtn">Copy</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Session is not encrypted. Do not paste secrets.</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
